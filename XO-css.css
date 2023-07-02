@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* background-color:#E2D1F9; */
+    background-color:#347a76;
+    height:70px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+nav ul{
+
+    list-style: none;
+    font-size: 2.5rem;
+    /* color:#E2D1F9; */
+    color:white;
+    
+    /* padding-left: 10px; */
+}
+
+li{
+    margin-left: 45vw;
+}
+
+
+.container{
+    /* background-color: yellow; */
+    display:flex;
+    justify-content: center;
+    display: none;
+    /* margin-top:10px; */
+}
+
+
+
+.game-container{
+    margin-left:5px;
+    margin-top: 30px;
+    display:grid;
+    font-size:4vw;
+    grid-template-rows: repeat(3 , 10vw);
+    grid-template-columns:10vw 10vw 10vw;
+
+}
+
+.line{
+
+    background-color: rgba(0, 0, 0, 0.438);
+    height:0px;
+    width: 0vw;
+    position:absolute;
+    transition: ease-in-out all 1s;
+
+
+
+    /* the order of rotate and translate is important in this we take rotate first and then translate */
+    /* if we take translate first then it will not work properly and we have to change the values of translate accordingly */
+    
+    /* Diagonal left */
+    /* transform: rotate(45deg) translate( 9.3vw , 11.3vw) ; */
+    
+    /* Diagonal right */
+    /* transform: rotate(135deg) translate( 11.4vw , -9.7vw) ; */
+
+    /* center vertical */
+    /* transform: rotate(90deg) translate( 14.8vw , 1.2vw) ; */
+    
+    /* left vertical */
+    /* transform: rotate(90deg) translate( 14.8vw , 11.3vw) ; */
+    
+
+    /* right vertical */
+    /* transform: rotate(90deg) translate( 14.8vw , -8.9vw) ; */
+    
+    /* top horizontal */
+    /* transform: translate( -1.25vw , 4.9vw) ; */
+    
+    /* central horizontal */
+    /* transform: translate( -1.25vw , 14.9vw) ; */
+    
+    /* bottom horizontal */
+    /* transform: translate( -1.25vw , 24.9vw) ; */
+
+}
+
+
+.box{    
+
+    border:2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+    
+}
+
+.box:hover{
+    background-color: #aeb7b6;
+    color: whitesmoke;
+}
+
+
+.bd-top{
+    border-top: 0px;
+}
+.bd-btm{
+    border-bottom: 0px;
+}
+.bd-lft{
+    border-left: 0px;
+}
+.bd-rht{
+    border-right: 0px;
+}
+
+
+.game-info{
+    margin: 30px 100px;
+    font-size: larger;
+    display:flex;
+    flex-direction: column;
+}
+
+.player_info{
+    font-size:2rem;
+}
+
+#img{
+    width:0;
+    transition: ease all 1s;
+}
+
+.win-box{
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+
+
+input[type="button"]{
+
+    width:6vw;
+    height:2vw;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left:35px;
+    border-radius: 10px;
+    background-color: rgb(238, 246, 224);
+    cursor:pointer;
+}
+
+
+
