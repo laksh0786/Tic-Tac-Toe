@@ -2,9 +2,9 @@
 let turn ='X';
 let game_over = false; 
 let count=0;
-let click_audio =  new Audio("Media/Click_Sound.mp3");
-let start_sound = new Audio("Media/game_start_sound.wav");
-let game_win = new Audio("Media/game_win.wav");
+let click_audio =  new Audio("Click_Sound.mp3");
+let start_sound = new Audio("game_start_sound.wav");
+let game_win = new Audio("game_win.wav");
 
 
 $(document).ready(function(){
